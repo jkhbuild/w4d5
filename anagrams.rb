@@ -16,5 +16,7 @@ def first_anagram2?(string1,string2)
     false
 end
 
-p first_anagram2?("gizmo", "sally")    #=> false
+
+
+p first_anagram2?("gizmo", "sally")    ##=> false
 p first_anagram2?("elvis", "lives")    #=> true
