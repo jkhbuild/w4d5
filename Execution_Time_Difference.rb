@@ -37,17 +37,29 @@ list_1 = [5,3,-7]
 list_2 = [2, 3, -6, 7, -6, 7]
 list_3 = [-5, -1, -3]
 
-def largest_contiguos_subsum(list)
+def largest_contiguous_subsum(list)
 
-    sub_sums = []
+    sub_sums = [] + list
     (0...list.length).each do |i|
         (0...list.length).each do |j|
-            sub_sums << list[i..j].sum if i > j
+            sub_sums << list[i..j].sum if j > i
         end     
     end
     sub_sums.max
 end
 
-p largest_contiguos_subsum(list_1) #=> 8
-p largest_contiguos_subsum(list_2) #=> 8          
-p largest_contiguos_subsum(list_3) #=> -1
+p largest_contiguous_subsum(list_1) #=> 8
+p largest_contiguous_subsum(list_2) #=> 8          
+p largest_contiguous_subsum(list_3) #=> -1
+
+def largest_contiguous_subsum2(list)
+    i = 0
+    j = 0
+
+    while i < list.length && j < list.length
+
+    
+end
+p largest_contiguous_subsum2(list_1) #=> 8
+p largest_contiguous_subsum2(list_2) #=> 8          
+p largest_contiguous_subsum2(list_3) #=> -1
