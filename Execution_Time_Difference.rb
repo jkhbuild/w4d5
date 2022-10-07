@@ -53,10 +53,25 @@ p largest_contiguous_subsum(list_2) #=> 8
 p largest_contiguous_subsum(list_3) #=> -1
 
 def largest_contiguous_subsum2(list)
+
+    curr_sum = 0
+    max_sum = list.first 
+
     i = 0
     j = 0
 
-    while i < list.length && j < list.length
+    while curr_sum !=
+
+    # while j < list.length
+    #     curr_sum = list[i..j]
+    #     if curr_sum > 0
+    #         j+=1
+    #     elsif curr_sum < 0
+    #         i+=1
+    #         j+=1
+    #     end
+    # end
+    
 
     
 end
