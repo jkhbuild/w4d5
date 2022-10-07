@@ -57,22 +57,12 @@ def largest_contiguous_subsum2(list)
     curr_sum = 0
     max_sum = list.first 
 
-    i = 0
-    j = 0
-
-    while curr_sum !=
-
-    # while j < list.length
-    #     curr_sum = list[i..j]
-    #     if curr_sum > 0
-    #         j+=1
-    #     elsif curr_sum < 0
-    #         i+=1
-    #         j+=1
-    #     end
-    # end
-    
-
+    list.each do |num|
+       curr_sum += num
+       max_sum = curr_sum if curr_sum > max_sum
+       curr_sum = 0 if curr_sum < 0 
+    end
+    max_sum
     
 end
 p largest_contiguous_subsum2(list_1) #=> 8
