@@ -18,4 +18,5 @@ def okay_two_sum?(arr, target_sum)
     arr = arr.sort
     i = 0
     j = arr.length - 1
-    
+
+    arr[i] + arr[j] >
